@@ -1,8 +1,8 @@
 # Vibe Coding Template
 
-Version 1.3
+Version 1.4
 
-Personal template for rapid app development using Claude Code workflow.
+Personal template for rapid app development from scratch using Claude Code.
 
 ## Quick Start
 
