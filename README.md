@@ -3,6 +3,7 @@
 Version 1.4
 
 Personal template for rapid app development from scratch using Claude Code.
+Tech Agnostic.
 
 ## Quick Start
 
