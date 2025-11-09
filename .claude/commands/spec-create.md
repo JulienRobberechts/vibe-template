@@ -3,7 +3,7 @@
 1. Read `/specs/pitch.md` (short project goal)
    - If missing, ask user to create it first
 
-2. Read `/specs/version-0-template.md` (spec format)
+2. Read `/specs/business-specs.template.md` (spec format)
 
 3. Generate detailed specification following template structure:
    - Expand pitch into full spec sections (Overview, Objectives, Scope, etc.)
