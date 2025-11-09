@@ -1,25 +1,29 @@
-# Vibe coding Template
+# Vibe Coding Template
 
-version 1
+Version 1
 
-# Instructions
+Template for rapid app development using Claude Code workflow.
 
-1. Copy this folder somewhere else
+## Quick Start
 
-> cp -a . ../my-project-name
+### Create new project
 
-2. Open VSCode into this new folder
+```bash
+npx degit JulienRobberechts/vibe-template my-project-name
+cd my-project-name
+code .
+```
 
-> code ../my-project-name
+### Workflow
 
-3. Open the pitch.md file and describe your application idea with enough details
+1. Edit `specs/pitch.md` - Describe your app idea
+2. Open Claude Code terminal (Command Palette)
+3. Run `/vibe` - Follow automated workflow
 
-> 
+## Alternative: Manual Copy
 
-4. Open Claude Code in terminal via the command palette
-
-> 
-
-5. Launch the vibe coding and answer to Claude if needed
-
+```bash
+cp -a . ../my-project-name
+code ../my-project-name
+```
 
