@@ -1,6 +1,6 @@
 # Vibe Coding Template
 
-Version 1.5
+Version 1.6
 
 Personal template for rapid app development from scratch using Claude Code.
 Tech Agnostic.
