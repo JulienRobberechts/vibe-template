@@ -1,6 +1,6 @@
 # Vibe Coding Template
 
-Version 1.4
+Version 1.5
 
 Personal template for rapid app development from scratch using Claude Code.
 Tech Agnostic.
@@ -18,9 +18,13 @@ code {my-project-name}
 
 ### Workflow
 
-1. Edit `specs/pitch.md` - Describe your app idea
-2. Open Claude Code terminal (Command Palette)
-3. Run `/vibe` - Follow the vibe coding by Claude
+1. Edit `specs/pitch.md` - Describe your app idea.
+
+2. You can add technical requirements into this file `/specs/tech-specs.md` 
+
+3. Open Claude Code terminal (Command Palette)
+
+4. Run `/vibe` - Follow the vibe coding by Claude
 
 Good Luck
 

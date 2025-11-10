@@ -1,6 +1,6 @@
 # Plan Implementation
 
-1. Find and read latest spec (`/specs/version-X.md`)
+1. Find and read business specifications (`/specs/version-X.md`) and technical specifications (`/specs/tech-specs.md`)
 
 2. Create multi-iteration implementation plan in `/docs/implementation.md`:
 
