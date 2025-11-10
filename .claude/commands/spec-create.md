@@ -1,4 +1,6 @@
-# Create Specification v1
+# Create Business Specification
+
+If the file `/specs/business-specs.md` already exists, ignore this command.
 
 1. Read `/specs/pitch.md` (short project goal)
    - If missing, ask user to create it first

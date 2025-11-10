@@ -1,4 +1,4 @@
-# Refine Specification
+# Refine BUsiness Specification
 
 1. Read the business specification file `/specs/business-specs.md`
 
