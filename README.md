@@ -9,6 +9,8 @@ Tech Agnostic.
 
 ### Create new project
 
+In terminal, move to the parent folder of your future project.
+
 ```bash
 npx degit JulienRobberechts/vibe-template {my-project-name}
 code {my-project-name}
