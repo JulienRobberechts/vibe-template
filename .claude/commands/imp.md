@@ -48,6 +48,7 @@ Implement iteration from `docs/implementation.md` using TDD. Work autonomously w
      - Note deviations from plan
      - List unresolved issues
    - List questions for next iteration (if any)
+   - Update the `README.md` file to explain the current way to use and test the project
 
 8. **Commit**
    - Stage changes
