@@ -21,3 +21,10 @@ Nice terminal for Claude Code usage. But the weekly limit is not diplayed.
 ### [Claude Conversation Extractor tool](https://github.com/ZeroSumQuant/claude-conversation-extractor)
 
 Tool to extract and save your Claude history. It could be useful sometimes.
+
+## Notes
+
+https://www.anthropic.com/engineering/claude-code-best-practices
+
+1. Create CLAUDE.md files
+2. If using GitHub, install the gh CLI
