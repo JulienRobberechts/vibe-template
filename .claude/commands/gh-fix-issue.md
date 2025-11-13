@@ -1,16 +1,31 @@
-Please analyze and fix the GitHub issue: $ARGUMENTS.
+Analyze and fix GitHub issue: $ARGUMENTS
 
-Follow these steps:
+Use TDD workflow (Plan → Test → Implement → Refactor → Review):
 
-- Use `gh issue view` to get the issue details
-- Understand the problem described in the issue
-- Search the codebase for relevant files and features
-- If possible, write and run tests to show that there is an issue in the code
-- Describe the problem and suggest few solutions to the developers
-- Implement the solution choosen by the developer to fix the issue
-- Ensure tests related to the issue is now passing
-- Ensure code passes linting and type checking
-- Create a descriptive commit message
-- Push and create a PR
+**Phase 1: Plan**
+- `gh issue view $ARGUMENTS` - get issue details
+- Search codebase for affected code
+- Propose 2-3 solutions, ask developer to choose
+- List unresolved questions if any
 
-Remember to use the GitHub CLI (`gh`) for all GitHub-related tasks.
+**Phase 2: Test**
+- Write failing test demonstrating bug
+- Run test suite to confirm failure
+
+**Phase 3: Implement**
+- Create branch: `jrob/issue-$ARGUMENTS-short-desc`
+- Implement chosen solution
+- Verify tests pass
+
+**Phase 4: Refactor**
+- Run linting/type checking: `npm run lint && npm run typecheck`
+- Fix any issues
+
+**Phase 5: Review**
+- Add changeset in `.changeset/0000-short-desc.md`
+- Commit with concise message
+- Push: `git push -u origin HEAD`
+- Create PR: `gh pr create`
+- Link issue in PR description
+
+Use `gh` for all GitHub ops.
