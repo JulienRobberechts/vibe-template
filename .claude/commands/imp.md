@@ -16,6 +16,8 @@ Implement iteration from `docs/implementation.md` using TDD. Work autonomously w
    - Extract objectives, tasks, deliverables
    - Note manual test checkboxes
 
+Search for sub-agent to delegate the work.
+
 3. **Plan** (if no active todos)
    - Use TodoWrite: create tasks from checklist
    - Break down into subtasks
