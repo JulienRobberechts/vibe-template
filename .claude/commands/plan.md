@@ -24,6 +24,8 @@
 
 ## Iterations
 
+**Agent:** Specify if parallelizable via sub-agent (e.g., dev-core, react-dev, dev-api)
+
 ### Iteration 1: [Feature Name]
 **Scope:** What gets built (1-2 sentences)
 
