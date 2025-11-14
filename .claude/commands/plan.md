@@ -4,6 +4,8 @@
 
 2. Create multi-iteration implementation plan in `/docs/implementation.md`:
 
+If a sub-agent seems able to do this job, delegate the job to this sub-agent (example: backend-architect)
+
 **Structure:**
 - Architecture decisions (file structure, module boundaries)
 - Iterations (sequential, one per feature/feature group):
