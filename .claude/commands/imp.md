@@ -15,20 +15,24 @@ Implement iteration from `docs/implementation.md` using TDD. Work autonomously w
    - Read `docs/implementation.md` for current iteration
    - Extract objectives, tasks, deliverables
    - Note manual test checkboxes
+   - Identify appropriate specialized agent: dev-core (domain/use-cases), dev-api (REST endpoints), dev-adapter-db (repositories), dev-i-cli (CLI), react-dev (web UI), react-native-dev (mobile)
 
-Search for sub-agent to delegate the work.
+3. **Delegate** (if suitable specialized agent exists)
+   - Use Task tool with matching agent type from above
+   - Provide iteration details and let agent work autonomously
+   - If no match: proceed to Plan step and notify the user that an specilized agent could be created.
 
-3. **Plan** (if no active todos)
+4. **Plan** (if no active todos)
    - Use TodoWrite: create tasks from checklist
    - Break down into subtasks
    - Only list blocking questions that prevent starting
 
-4. **Verify Baseline**
+5. **Verify Baseline**
    - Run existing tests: `npm test`
    - If fails: fix before proceeding
    - Run dev: `npm run dev`
 
-5. **TDD Cycle** (repeat until all todos completed)
+6. **TDD Cycle** (repeat until all todos completed)
    - **Test**: Write failing test
    - **Implement**: Minimal code to pass
    - **Refactor**: Clean up
@@ -36,14 +40,14 @@ Search for sub-agent to delegate the work.
    - Mark todo completed
    - **Continue**: Move to next todo without stopping
 
-6. **Integration Test**
+7. **Integration Test**
    - Run full test suite: `npm test`
    - Run dev server: `npm run dev`
    - Complete ALL manual tests from iteration checklist
    - Test responsive (mobile + desktop) if UI
    - If any fail: fix and repeat
 
-7. **Document**
+8. **Document**
    - Update `docs/implementation.md`:
      - Mark iteration ✅ COMPLETED
      - Add timestamp: "Completed: YYYY-MM-DD"
@@ -52,7 +56,7 @@ Search for sub-agent to delegate the work.
    - List questions for next iteration (if any)
    - Update the `README.md` file to explain the current way to use and test the project
 
-8. **Commit**
+9. **Commit**
    - Stage changes
    - Commit: "feat: iteration $1 - [brief desc]"
    - Add changeset if needed
