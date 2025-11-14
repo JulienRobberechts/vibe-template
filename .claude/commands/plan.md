@@ -1,26 +1,56 @@
 # Plan Implementation
 
-1. Find and read business specifications (`/specs/version-X.md`) and technical specifications (`/specs/tech-specs.md`)
+**Workflow:**
 
-2. Create multi-iteration implementation plan in `/docs/implementation.md`:
+1. **Explore context** (in parallel if possible):
+   - Read specs: `/specs/business-specs.md`, `/specs/tech-specs.md`
+   - Explore codebase structure (use Task tool with Explore agent for quick overview)
+   - Read relevant existing code
 
-If a sub-agent seems able to do this job, delegate the job to this sub-agent (example: backend-architect)
+2. **Choose planning approach:**
+   - **Architectural planning** (system design, folder structure, module boundaries) → Use `backend-architect` agent
+   - **Feature implementation planning** (specific features, components, use cases) → Plan directly
+
+3. **Create plan** in `/docs/implementation.md`:
 
 **Structure:**
-- Architecture decisions (file structure, module boundaries)
-- Iterations (sequential, one per feature/feature group):
-  - Iteration N: Feature name
-    - Scope (what gets built)
-    - TDD phases: Plan → Test → Implement → Refactor → Review
-    - Deliverables (working code, tests, docs)
-    - Dependencies (what must be done first)
-    - Unresolved questions (if any)
+```markdown
+# Implementation Plan: [Feature/System Name]
+
+## Architecture
+- File structure
+- Module boundaries
+- Key design decisions
+
+## Iterations
+
+### Iteration 1: [Feature Name]
+**Scope:** What gets built (1-2 sentences)
+
+**TDD Phases:**
+- Plan: Design approach
+- Test: Write failing tests
+- Implement: Make tests pass
+- Refactor: Clean up
+- Review: Check quality
+
+**Deliverables:** Working code, tests, docs
+
+**Dependencies:** What must exist first
+
+**Questions:** Unresolved items (if any)
+
+[Repeat for each iteration...]
+```
 
 **Planning Principles:**
-- Design for incremental delivery (each iteration = working feature)
-- Follow TDD strictly (write tests before implementation)
-- Start simple: core features first, skip optional unless requested
-- Only ask questions if genuinely ambiguous (prefer best-practice defaults)
-- Order iterations by dependency (foundation → features → polish)
+- Incremental delivery (each iteration = working feature)
+- TDD mandatory (tests before code)
+- Dependency order (foundation → features → polish)
+- Simple first (skip optional unless requested)
+- Assume best practices (only ask if genuinely ambiguous)
 
-3. Show plan summary and ask user to review
+4. **Present plan:**
+   - Show concise summary
+   - List unresolved questions
+   - Use ExitPlanMode tool to get user approval
