@@ -5,6 +5,7 @@
 - ask to update the readme of the project as iteration 0 and after each iteration
 - find solution for permissions
 - Add step to auto adjust errors and improve skills and commands
+- the sub-agent do not stop and take all the iteration without going back to the parent.
 
 # Done
 
