@@ -18,6 +18,20 @@ INFO: I had some trouble to make it work. I had to start it manually before for 
 
 Tool to extract and save your Claude history. It could be useful sometimes.
 
+### Advices
+
+
+  ✅ What Works:
+- Concise, imperative requests ("implement phase 5")
+- Use Numbered task lists
+- References to existing docs
+- Running single tests
+- Add commands documentation in claude.MD
+- Specify the scope of your request
+- Mixing multiple concerns in one request
+- Do not mix multiple concerns in one request
+- Do not switch between projects mid-conversation
+
 ## Notes
 
 https://www.anthropic.com/engineering/claude-code-best-practices

@@ -14,11 +14,13 @@
 - Use ES modules (import/export), not CommonJS
 - Destructure imports when possible
 
-# Testing (TDD)
-- Write tests BEFORE implementation
-- Run single test files, not full suite
-- Check test output for actual vs expected values
-- Command: npm test -- path/to/test.test.ts
+## TDD Workflow (MANDATORY)
+1. Write failing test FIRST BEFORE implementation
+2. Verify it fails. Run single test files, not full suite
+3. Write minimal code to pass
+4. Verify it passes
+5. Refactor
+6. Commit
 
 # Task Tracking (MANDATORY)
 - Any task >2 steps → use TodoWrite immediately
@@ -49,6 +51,12 @@
 - Commits: "feat:", "spec:", "fix:", "test:"
 
 # Common Commands
+
+...
+
+# Architecture overview
+
+...
 
 # Common Issues
 - Check dependencies before imports
