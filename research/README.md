@@ -4,8 +4,39 @@ This directory contains comprehensive research and planning for refactoring Clau
 
 ## Documents Overview
 
-### 1. [command-skill-refactor-plan.md](./command-skill-refactor-plan.md)
-**Primary planning document** with complete refactoring strategy.
+### 1. [IMPLEMENTATION-PLAN.md](./IMPLEMENTATION-PLAN.md) ⭐ **START HERE**
+**Precise, approved implementation plan ready to execute.**
+
+**Contents:**
+- User decisions applied (big bang, hard cutover, 500-line skills)
+- Day-by-day implementation schedule (7 days)
+- Detailed checklists for each phase
+- Exact file operations and commands
+- Testing procedures
+- Rollback plan
+- Success metrics
+
+**Read this** to start implementation immediately.
+
+---
+
+### 2. [QUICK-REFERENCE.md](./QUICK-REFERENCE.md) 📋
+**Quick reference guide for implementation.**
+
+**Contents:**
+- At-a-glance status and decisions
+- Week schedule overview
+- Key bash commands
+- Daily checklists
+- Testing commands
+- Common issues & solutions
+
+**Use this** during implementation for quick lookups.
+
+---
+
+### 3. [command-skill-refactor-plan.md](./command-skill-refactor-plan.md)
+**Original strategic planning document.**
 
 **Contents:**
 - Current structure analysis (agents, commands, skills)
@@ -17,11 +48,11 @@ This directory contains comprehensive research and planning for refactoring Clau
 - Implementation roadmap with timeline
 - Success metrics and risk mitigation
 
-**Read this first** for the big picture and strategic direction.
+**Read this** for the big picture and strategic direction.
 
 ---
 
-### 2. [knowledge-mapping-analysis.md](./knowledge-mapping-analysis.md)
+### 4. [knowledge-mapping-analysis.md](./knowledge-mapping-analysis.md)
 **Detailed knowledge extraction and duplication analysis.**
 
 **Contents:**
@@ -37,7 +68,7 @@ This directory contains comprehensive research and planning for refactoring Clau
 
 ---
 
-### 3. [implementation-examples.md](./implementation-examples.md)
+### 5. [implementation-examples.md](./implementation-examples.md)
 **Concrete before/after examples of refactoring.**
 
 **Contents:**
@@ -140,22 +171,30 @@ Update docs, create migration guide
 
 ## Getting Started
 
-### For Reviewers:
-1. Read [command-skill-refactor-plan.md](./command-skill-refactor-plan.md) - Overview
-2. Review specific sections based on your focus area
-3. Provide feedback on questions in knowledge-mapping-analysis.md
+### ✅ Decisions Made - Ready to Implement
 
-### For Implementers:
-1. Start with [implementation-examples.md](./implementation-examples.md)
-2. Pick one workflow skill to create (recommend: workflow-tdd)
-3. Refactor one command to use it (recommend: imp.md)
-4. Validate before scaling to others
+All critical decisions have been made:
+- Skill size: 500 lines (merged smaller skills)
+- Migration: Big bang (1 week)
+- Backwards compat: Hard cutover
+- Splits: Only dev-core & dev-adapter-db
+- Agents: Hybrid (some specialized)
+
+### For Implementers (START HERE):
+
+1. **Read** [IMPLEMENTATION-PLAN.md](./IMPLEMENTATION-PLAN.md) - Complete 7-day plan
+2. **Reference** [QUICK-REFERENCE.md](./QUICK-REFERENCE.md) - Daily checklists
+3. **Execute** Day 1: Create workflow-implementation skill
+4. **Follow** the detailed checklist for each day
+
+### For Reviewers:
+1. Read [command-skill-refactor-plan.md](./command-skill-refactor-plan.md) - Strategic overview
+2. Review [knowledge-mapping-analysis.md](./knowledge-mapping-analysis.md) - Detailed analysis
+3. Check [implementation-examples.md](./implementation-examples.md) - Code examples
+4. All decisions documented in README decisions section
 
 ### For Decision Makers:
-1. Read "Quick Summary" (above)
-2. Review "Success Metrics" in command-skill-refactor-plan.md
-3. Check "Risk Mitigation" section
-4. Decide: approve, modify, or reject
+✅ **Plan Approved** - All decisions finalized, ready for implementation
 
 ## Critical Decisions Needed
 
@@ -341,14 +380,18 @@ Contact project maintainer or open issue with:
 
 ## Document Index
 
-- [command-skill-refactor-plan.md](./command-skill-refactor-plan.md) - Main plan
-- [knowledge-mapping-analysis.md](./knowledge-mapping-analysis.md) - Detailed analysis
-- [implementation-examples.md](./implementation-examples.md) - Code examples
-- [README.md](./README.md) - This file
+Priority order for implementation:
+
+1. **[IMPLEMENTATION-PLAN.md](./IMPLEMENTATION-PLAN.md)** ⭐ - Precise 7-day implementation plan
+2. **[QUICK-REFERENCE.md](./QUICK-REFERENCE.md)** 📋 - Quick reference during implementation
+3. [command-skill-refactor-plan.md](./command-skill-refactor-plan.md) - Strategic overview
+4. [knowledge-mapping-analysis.md](./knowledge-mapping-analysis.md) - Knowledge extraction details
+5. [implementation-examples.md](./implementation-examples.md) - Before/after code examples
+6. [README.md](./README.md) - This file
 
 ---
 
-**Research Version:** 1.0
+**Research Version:** 1.1
 **Date:** 2025-11-16
-**Status:** Awaiting Review & Decision
-**Next Review:** TBD
+**Status:** ✅ Approved - Ready for Implementation
+**Next Step:** Start Day 1 - Create workflow-implementation skill
