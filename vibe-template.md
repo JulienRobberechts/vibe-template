@@ -31,13 +31,13 @@ All commands 25-36 lines, reference skills:
 ---
 
 # Todo
-- ask to load serena MCP server at one point in the project
-- ask to update the readme of the project as iteration 0 and after each iteration
-- find solution for permissions
+- ask to load serena MCP server asap in the project developpement
+- ask to update the readme of the project after each iteration
+- find solution for permissions to not have to answer multiple time to the same permissions questions
 - Add step to auto adjust errors and improve skills and commands
 - the sub-agent do not stop and take all the iteration without going back to the parent.
 - update claude.md at all level of the project
-- Make a Decision Log - Document why you chose specific libraries/patterns (prevents re-explaining)
+- Make a decision Log - Document why you chose specific libraries/patterns (prevents re-explaining)
 - Build Verification - Script to verify dist/ structure
 - Shorter Sessions - Commit more frequently for better resume points
 
@@ -49,4 +49,3 @@ All commands 25-36 lines, reference skills:
 - Split dev-core into domain + application
 - Split dev-adapter-db into core + prisma + drizzle + raw
 - Created specialized agents (dev-core-domain, dev-core-application, dev-adapter-db-prisma)
-- Completed IMPLEMENTATION-PLAN.md (100%)
