@@ -8,17 +8,17 @@
 ## Development Skills
 - **dev-core-domain** (823 lines): Domain layer (entities, value objects, domain services)
 - **dev-core-application** (737 lines): Application layer (use cases, ports, DTOs)
-- **dev-adapter-db-core** (empty): Repository patterns - INCOMPLETE
-- **dev-adapter-db-prisma** (empty): Prisma-specific - INCOMPLETE
-- **dev-adapter-db-drizzle** (empty): Drizzle ORM - INCOMPLETE
-- **dev-adapter-db-raw** (empty): Raw SQL/Knex - INCOMPLETE
+- **dev-adapter-db-core** (652 lines): Repository patterns, entity mapping, transactions
+- **dev-adapter-db-prisma** (350 lines): Prisma ORM implementation
+- **dev-adapter-db-drizzle** (111 lines): Drizzle ORM patterns
+- **dev-adapter-db-raw** (374 lines): Raw SQL/Knex, query optimization
 
 ## Agents
 - **dev-core**: Loads domain + application + workflow-implementation
 - **dev-core-domain**: Domain layer only
 - **dev-core-application**: Application layer only
-- **dev-adapter-db**: Loads core + prisma + workflow-implementation (BROKEN - skills missing)
-- **dev-adapter-db-prisma**: Prisma-specific (BROKEN - skills missing)
+- **dev-adapter-db**: Loads core + prisma + workflow-implementation
+- **dev-adapter-db-prisma**: Prisma-specific
 
 ## Commands
 All commands 25-36 lines, reference skills:
@@ -28,15 +28,9 @@ All commands 25-36 lines, reference skills:
 - **/plan** (25 lines): Planning workflow
 - **/feat-refine** (29 lines): Spec refinement
 
-## Known Issues
-⚠️ dev-adapter-db split incomplete - directories exist but SKILL.md files missing
-⚠️ Original dev-adapter-db/SKILL.md deleted in f5a5852
-
 ---
 
 # Todo
-
-- Complete dev-adapter-db skill split (create SKILL.md files)
 - ask to load serena MCP server at one point in the project
 - ask to update the readme of the project as iteration 0 and after each iteration
 - find solution for permissions
@@ -51,6 +45,8 @@ All commands 25-36 lines, reference skills:
 
 - explicitly ask to use agent in developpement
 - Refactored commands to 25-36 lines (51% reduction)
-- Created 3 workflow skills
+- Created 3 workflow skills (workflow-implementation, workflow-project, workflow-agent-delegation)
 - Split dev-core into domain + application
-- Created specialized agents
+- Split dev-adapter-db into core + prisma + drizzle + raw
+- Created specialized agents (dev-core-domain, dev-core-application, dev-adapter-db-prisma)
+- Completed IMPLEMENTATION-PLAN.md (100%)
