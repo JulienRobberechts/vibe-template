@@ -1,81 +1,36 @@
-Implement the feature using TDD. Work autonomously without stopping unless blocked.
+# Feature Implementation
+
+Implement feature from `/backlog/*.md` using TDD. Work autonomously.
+
+**Skills Required:**
+- workflow-implementation: TDD cycle, autonomy rules
+- workflow-project: Spec tracking, git workflow
+- workflow-agent-delegation: Agent selection
 
 ## Workflow
 
 1. **Resume State**
-   - Read `/backlog/{{ARGUMENTS}}`: check status
-   - Check git status + existing todos
-   - If COMPLETED: skip to next feature
-   - If in progress: resume from last todo
+   - Read `/backlog/*.md` iteration status
+   - Check git status + todos
+   - Resume from last in_progress or next iteration
 
-2. **Verify Spec**
-   - Extract objectives, tasks, deliverables, manual tests
-   - If incomplete: complete spec, ask validation
+2. **Delegate** (if iteration matches specialized agent)
+   - Use workflow-agent-delegation skill
+   - Invoke Task tool with iteration context
+   - Skip to step 5 when done
 
-3. **Plan Tasks** (if no active todos)
-   - Use TodoWrite: create tasks from spec checklist
-   - Only ask blocking questions
+3. **Plan** (if no delegation or no todos)
+   - TodoWrite from iteration checklist
+   - Apply workflow-implementation autonomy rules
 
-4. **Baseline Check**
-   - Run `npm test` (fix if fails)
-   - Run `npm run dev` (verify working)
+4. **Implement**
+   - Follow workflow-implementation TDD patterns
+   - Mark todos completed immediately
 
-5. **TDD Cycle** (repeat per todo)
-   - Write failing test
-   - Minimal implementation to pass
-   - Refactor + verify (automated + manual)
-   - Mark todo completed
-   - Continue to next without stopping
-
-6. **Integration Verify**
-   - Run full suite: `npm test`
-   - Run dev: `npm run dev`
-   - Complete ALL manual tests from spec
-   - Test responsive if UI
-   - Fix failures, repeat if needed
-
-7. **Complete Feature**
-   - Update `/backlog/{{ARGUMENTS}}`:
-     - Status: ✅ COMPLETED
-     - Completed: YYYY-MM-DD
-     - Deviations + unresolved issues
-
-8. **Commit**
-   - Stage changes
-   - Add commit message: "feat: [brief]"
+5. **Complete**
+   - Update /backlog/*.md (workflow-project)
+   - Commit using workflow-project git patterns
    - Add changeset if needed
-   - Ask user to commit
-
-## Autonomy Rules
-
-**Work continuously unless:**
-- Missing critical info (unclear spec, ambiguous requirement)
-- External blocker (API key, missing package, environment)
-- Critical error blocking progress
-
-**Do NOT ask about:**
-- Implementation details
-- Code style
-- Test/variable naming
-- Minor architecture choices
-
-**When blocked:**
-- Resolve independently first (docs, existing code)
-- Ask ONE specific question
-- Continue unblocked work while waiting
-
-## Rules
-
-- Feature = working, testable app
-- Follow architecture (docs/implementation.md)
-- Never commit failing tests
-- Run full suite before commit
-- Make forward progress every execution
 
 ## Output
-
-- What was built (1 sentence)
-- Files changed
-- Manual test results
-- Next feature recommendation
-
+What built, files changed, manual tests, next iteration.

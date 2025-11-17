@@ -1,60 +1,35 @@
-# Fix Failing Tests
+# Fix Bug
 
-Systematically fix failing tests in the project using a structured approach.
+Fix bug using TDD debugging workflow. Work autonomously.
+
+**Skills Required:**
+- workflow-implementation: TDD cycle, debugging patterns
+- workflow-project: Git workflow
 
 ## Workflow
 
-1. **Discover Failing Tests**
-   - Run test suite to identify failures
-   - Group failures by type/pattern
-   - Prioritize based on:
-     - Root cause tests (others may be cascading failures)
-     - Critical functionality
-     - Test complexity
+1. **Understand**
+   - Read error message/issue description
+   - Reproduce bug locally
+   - Identify root cause
 
-2. **For Each Failing Test**
+2. **Write Failing Test**
+   - Create test that reproduces bug
+   - Verify test fails
+   - Follow workflow-implementation TDD patterns
 
-   a) **Analyze Failure**
-      - Read test code and understand intent
-      - Examine error message/stack trace
-      - Identify root cause:
-        - Implementation bug
-        - Test expectation mismatch
-        - Missing functionality
-        - Configuration issue
+3. **Fix**
+   - Write minimal code to pass test
+   - Verify test passes
+   - Run full test suite
 
-   b) **Plan Fix**
-      - Implementation fix: Modify source code to pass test
-      - Test fix: Adjust test expectations if requirements changed
-      - Explain approach clearly
-      - Consider side effects on other tests
+4. **Refactor**
+   - Clean up implementation
+   - Verify tests still pass
 
-   c) **Confirm & Execute**
-      - Present plan to user
-      - Wait for confirmation
-      - Apply changes
-      - Verify fix passes
-      - Check for regressions
+5. **Complete**
+   - Commit using workflow-project git patterns
+   - Add changeset if needed
 
-3. **Batch Processing Options**
-   - Fix similar failures together
-   - Skip tests temporarily if blocked
-   - Mark tests for follow-up
-
-## Usage
-
-```bash
-/fix                          # Fix all failing tests
-/fix --file <test-file>       # Fix specific test file
-/fix --pattern <name>         # Fix tests matching pattern
-/fix --batch                  # Auto-fix similar issues
-```
-
-## Best Practices
-
-- Run full test suite before starting
-- Fix one test at a time unless batching similar issues
-- Verify each fix doesn't break other tests
-- Document non-obvious fixes
-- Consider adding regression tests
-
+## Output
+Bug fixed, test added, files changed.
