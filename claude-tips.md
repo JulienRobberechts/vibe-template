@@ -1,5 +1,11 @@
 # Personal tools or tips to use Claude
 
+## Command
+
+```
+claude --dangerously-skip-permissions
+```
+
 ## Tools
 
 ### [Serena MCP for Claude Code](https://github.com/oraios/serena)
