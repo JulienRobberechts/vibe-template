@@ -30,6 +30,23 @@ All commands 25-36 lines, reference skills:
 
 ---
 
+## Ways to guide AI
+
+- show folder structure
+- create TODOs in code
+- create feature file
+- create function stub
+- give template projects
+- documents : Pitch, Product Requirements Document, Implementation plan.
+- Ask to propose multiple solutions for each problem, pros, cons and recommendation.
+- create a lot of quality checking points : linting, tests, quality metrics
+- give architecture guidlines
+- ask to write in TDD
+- ask to review test coverage and test approch
+- create good claud.md
+- ask to read PRD and code and suggest improvements and explains why.
+- add integration tests early in the project
+
 # Todo
 - ask to load serena MCP server asap in the project developpement
 - ask to update the readme of the project after each iteration
@@ -49,3 +66,4 @@ All commands 25-36 lines, reference skills:
 - Split dev-core into domain + application
 - Split dev-adapter-db into core + prisma + drizzle + raw
 - Created specialized agents (dev-core-domain, dev-core-application, dev-adapter-db-prisma)
+
